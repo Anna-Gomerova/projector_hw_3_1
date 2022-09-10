@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+    width: 100%;
+}
+
+
+h2 {
+    text-decoration: none;
+
+}
+
+.background {
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro_section {
+    background-image: url(./img/section_1_bg.png);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    hr {
+        width: 100vw;
+        transform: translateX(-6.25vw);
+        position: absolute;
+        height: 0;
+        border-top: 2px solid #484C32;
+        bottom: 32%;
+        z-index: -1;
+    }
+
+    .intro_section {
+        padding-top: 6.25vw;
+        padding-bottom: 9.375vw;
+    }
+
+    .intro_section__container {
+        margin: 0 auto;
+        width: 87.5vw;
+    }
+
+    .intro_section__container p {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .intro_section__img {
+        position: relative;
+        margin-bottom: 3.125vw;
+    }
+
+    .intro_section__container img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* About 1   320+*/
+
+
+    .about_1_section {
+        padding-top: 15.625vw;
+        padding-bottom: 15.625vw;
+    }
+
+    .about_1_section__container {
+        width: 87.5vw;
+        margin: 0 auto;
+    }
+
+    .about_1_section__container figure {
+        margin-bottom: 6.25vw;
+    }
+
+    .about_1_section__container img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+
+
+    }
+
+    .about_1_section__container p {
+        font-family: 'Sintony';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+
+        color: #000000;
+    }
+
+    /* About 2   320+ */
+
+    .about_2_section {
+        background-image: url(./img/section_3_bg.png);
+        padding-top: 9.375vw;
+        /* 30px */
+        padding-bottom: 9.375vw;
+    }
+
+    .about_2_section__container {
+        width: 87.5vw;
+        margin: 0 auto;
+    }
+
+    .about_2_section__container h2 {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+    div[class $= "__container"] {
+        max-width: 1240px;
+        margin: 0 auto;
+        width: 86%;
+    }
+
+    .intro_section {
+        padding-top: 73px;
+        padding-bottom: 57px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .intro_section__container {
+        display: flow-root;
+    }
+
+    .intro_section__container p {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 140%;
+
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #000000;
+
+    }
+
+    .intro_section__img {
+        float: right;
+        shape-outside: polygon(300px 0px, 533px 0px, 533px 359px, 0px 359px, 0px 169px);
+    }
+
+    .intro_section__container hr {
+        display: none;
+    }
+
+    /* About 1   800+*/
+
+    .about_1_section {
+        padding-top: 158px;
+        padding-bottom: 164px;
+    }
+
+    .about_1_section__container figure {
+        float: left;
+        margin-right: 30px;
+    }
+
+    .about_1_section__container {
+        display: flow-root;
+    }
+
+    .about_1_section__container p {
+        font-family: 'Sintony';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 140%;
+
+        color: #000000;
+    }
+
+    /* About 2   800+*/
+
+    .about_2_section {
+        background-image: url(./img/section_3_bg.png);
+        padding-top: 214px;
+        padding-bottom: 197px;
+    }
+
+    .about_2_section__container h2 {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 140%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        width: 83%;
+        margin: 0 auto;
+    }
+}
